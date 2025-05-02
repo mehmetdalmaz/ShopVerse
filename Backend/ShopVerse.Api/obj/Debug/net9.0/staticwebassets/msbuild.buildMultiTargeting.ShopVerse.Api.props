@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/ShopVerse.Api.props" />
+</Project>

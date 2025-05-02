@@ -1,0 +1,17 @@
+/Users/mehmetdalmaz/RiderProjects/ShopVerse/Backend/ShopVerse.DataAccess/bin/Debug/net9.0/ShopVerse.DataAccess.deps.json
+/Users/mehmetdalmaz/RiderProjects/ShopVerse/Backend/ShopVerse.DataAccess/bin/Debug/net9.0/ShopVerse.DataAccess.runtimeconfig.json
+/Users/mehmetdalmaz/RiderProjects/ShopVerse/Backend/ShopVerse.DataAccess/bin/Debug/net9.0/ShopVerse.DataAccess.dll
+/Users/mehmetdalmaz/RiderProjects/ShopVerse/Backend/ShopVerse.DataAccess/bin/Debug/net9.0/ShopVerse.DataAccess.pdb
+/Users/mehmetdalmaz/RiderProjects/ShopVerse/Backend/ShopVerse.DataAccess/bin/Debug/net9.0/ShopVerse.Entity.dll
+/Users/mehmetdalmaz/RiderProjects/ShopVerse/Backend/ShopVerse.DataAccess/bin/Debug/net9.0/ShopVerse.Entity.pdb
+/Users/mehmetdalmaz/RiderProjects/ShopVerse/Backend/ShopVerse.DataAccess/obj/Debug/net9.0/ShopVerse.DataAccess.csproj.AssemblyReference.cache
+/Users/mehmetdalmaz/RiderProjects/ShopVerse/Backend/ShopVerse.DataAccess/obj/Debug/net9.0/ShopVerse.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mehmetdalmaz/RiderProjects/ShopVerse/Backend/ShopVerse.DataAccess/obj/Debug/net9.0/ShopVerse.DataAccess.AssemblyInfoInputs.cache
+/Users/mehmetdalmaz/RiderProjects/ShopVerse/Backend/ShopVerse.DataAccess/obj/Debug/net9.0/ShopVerse.DataAccess.AssemblyInfo.cs
+/Users/mehmetdalmaz/RiderProjects/ShopVerse/Backend/ShopVerse.DataAccess/obj/Debug/net9.0/ShopVerse.DataAccess.csproj.CoreCompileInputs.cache
+/Users/mehmetdalmaz/RiderProjects/ShopVerse/Backend/ShopVerse.DataAccess/obj/Debug/net9.0/ShopVers.0ACF7440.Up2Date
+/Users/mehmetdalmaz/RiderProjects/ShopVerse/Backend/ShopVerse.DataAccess/obj/Debug/net9.0/ShopVerse.DataAccess.dll
+/Users/mehmetdalmaz/RiderProjects/ShopVerse/Backend/ShopVerse.DataAccess/obj/Debug/net9.0/refint/ShopVerse.DataAccess.dll
+/Users/mehmetdalmaz/RiderProjects/ShopVerse/Backend/ShopVerse.DataAccess/obj/Debug/net9.0/ShopVerse.DataAccess.pdb
+/Users/mehmetdalmaz/RiderProjects/ShopVerse/Backend/ShopVerse.DataAccess/obj/Debug/net9.0/ShopVerse.DataAccess.genruntimeconfig.cache
+/Users/mehmetdalmaz/RiderProjects/ShopVerse/Backend/ShopVerse.DataAccess/obj/Debug/net9.0/ref/ShopVerse.DataAccess.dll

@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "nMI+KdlwRc4x3ztdGjgbMfTaVd2PkC6ZX3BjmYRT9Fk=",
+  "Source": "ShopVerse.Api",
+  "BasePath": "_content/ShopVerse.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
