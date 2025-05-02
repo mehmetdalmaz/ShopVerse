@@ -13,4 +13,6 @@ public class Product
 
     public ICollection<ProductImage>? Images { get; set; }
     public ICollection<ProductReview>? Reviews { get; set; }
+    public ICollection<CartItem>? CartItems { get; set; }
+
 }

@@ -10,3 +10,16 @@
 /Users/mehmetdalmaz/RiderProjects/ShopVerse/Backend/ShopVerse.Entity/obj/Debug/net9.0/refint/ShopVerse.Entity.dll
 /Users/mehmetdalmaz/RiderProjects/ShopVerse/Backend/ShopVerse.Entity/obj/Debug/net9.0/ShopVerse.Entity.pdb
 /Users/mehmetdalmaz/RiderProjects/ShopVerse/Backend/ShopVerse.Entity/obj/Debug/net9.0/ref/ShopVerse.Entity.dll
+/Users/mehmetdalmaz/Desktop/ShopVerse/Backend/ShopVerse.Entity/bin/Debug/net9.0/ShopVerse.Entity.deps.json
+/Users/mehmetdalmaz/Desktop/ShopVerse/Backend/ShopVerse.Entity/bin/Debug/net9.0/ShopVerse.Entity.dll
+/Users/mehmetdalmaz/Desktop/ShopVerse/Backend/ShopVerse.Entity/bin/Debug/net9.0/ShopVerse.Entity.pdb
+/Users/mehmetdalmaz/Desktop/ShopVerse/Backend/ShopVerse.Entity/obj/Debug/net9.0/ShopVerse.Entity.csproj.AssemblyReference.cache
+/Users/mehmetdalmaz/Desktop/ShopVerse/Backend/ShopVerse.Entity/obj/Debug/net9.0/ShopVerse.Entity.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mehmetdalmaz/Desktop/ShopVerse/Backend/ShopVerse.Entity/obj/Debug/net9.0/ShopVerse.Entity.AssemblyInfoInputs.cache
+/Users/mehmetdalmaz/Desktop/ShopVerse/Backend/ShopVerse.Entity/obj/Debug/net9.0/ShopVerse.Entity.AssemblyInfo.cs
+/Users/mehmetdalmaz/Desktop/ShopVerse/Backend/ShopVerse.Entity/obj/Debug/net9.0/ShopVerse.Entity.csproj.CoreCompileInputs.cache
+/Users/mehmetdalmaz/Desktop/ShopVerse/Backend/ShopVerse.Entity/obj/Debug/net9.0/ShopVerse.Entity.sourcelink.json
+/Users/mehmetdalmaz/Desktop/ShopVerse/Backend/ShopVerse.Entity/obj/Debug/net9.0/ShopVerse.Entity.dll
+/Users/mehmetdalmaz/Desktop/ShopVerse/Backend/ShopVerse.Entity/obj/Debug/net9.0/refint/ShopVerse.Entity.dll
+/Users/mehmetdalmaz/Desktop/ShopVerse/Backend/ShopVerse.Entity/obj/Debug/net9.0/ShopVerse.Entity.pdb
+/Users/mehmetdalmaz/Desktop/ShopVerse/Backend/ShopVerse.Entity/obj/Debug/net9.0/ref/ShopVerse.Entity.dll

@@ -543,11 +543,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/mehmetdalmaz/RiderProjects/ShopVerse/Backend/ShopVerse.Dto/ShopVerse.Dto.csproj",
+      "projectUniqueName": "/Users/mehmetdalmaz/Desktop/ShopVerse/Backend/ShopVerse.Dto/ShopVerse.Dto.csproj",
       "projectName": "ShopVerse.Dto",
-      "projectPath": "/Users/mehmetdalmaz/RiderProjects/ShopVerse/Backend/ShopVerse.Dto/ShopVerse.Dto.csproj",
+      "projectPath": "/Users/mehmetdalmaz/Desktop/ShopVerse/Backend/ShopVerse.Dto/ShopVerse.Dto.csproj",
       "packagesPath": "/Users/mehmetdalmaz/.nuget/packages/",
-      "outputPath": "/Users/mehmetdalmaz/RiderProjects/ShopVerse/Backend/ShopVerse.Dto/obj/",
+      "outputPath": "/Users/mehmetdalmaz/Desktop/ShopVerse/Backend/ShopVerse.Dto/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/mehmetdalmaz/.nuget/NuGet/NuGet.Config"

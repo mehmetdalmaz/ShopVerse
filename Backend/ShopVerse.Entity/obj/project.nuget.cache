@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "l91OOSg0ruQ=",
+  "dgSpecHash": "5cnHrJouEIY=",
   "success": true,
-  "projectFilePath": "/Users/mehmetdalmaz/RiderProjects/ShopVerse/Backend/ShopVerse.Entity/ShopVerse.Entity.csproj",
+  "projectFilePath": "/Users/mehmetdalmaz/Desktop/ShopVerse/Backend/ShopVerse.Entity/ShopVerse.Entity.csproj",
   "expectedPackageFiles": [
     "/Users/mehmetdalmaz/.nuget/packages/microsoft.aspnetcore.cryptography.internal/9.0.4/microsoft.aspnetcore.cryptography.internal.9.0.4.nupkg.sha512",
     "/Users/mehmetdalmaz/.nuget/packages/microsoft.aspnetcore.cryptography.keyderivation/9.0.4/microsoft.aspnetcore.cryptography.keyderivation.9.0.4.nupkg.sha512",

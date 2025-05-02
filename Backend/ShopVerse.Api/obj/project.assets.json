@@ -3068,11 +3068,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/mehmetdalmaz/RiderProjects/ShopVerse/Backend/ShopVerse.Api/ShopVerse.Api.csproj",
+      "projectUniqueName": "/Users/mehmetdalmaz/Desktop/ShopVerse/Backend/ShopVerse.Api/ShopVerse.Api.csproj",
       "projectName": "ShopVerse.Api",
-      "projectPath": "/Users/mehmetdalmaz/RiderProjects/ShopVerse/Backend/ShopVerse.Api/ShopVerse.Api.csproj",
+      "projectPath": "/Users/mehmetdalmaz/Desktop/ShopVerse/Backend/ShopVerse.Api/ShopVerse.Api.csproj",
       "packagesPath": "/Users/mehmetdalmaz/.nuget/packages/",
-      "outputPath": "/Users/mehmetdalmaz/RiderProjects/ShopVerse/Backend/ShopVerse.Api/obj/",
+      "outputPath": "/Users/mehmetdalmaz/Desktop/ShopVerse/Backend/ShopVerse.Api/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/mehmetdalmaz/.nuget/NuGet/NuGet.Config"
@@ -3087,17 +3087,17 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "/Users/mehmetdalmaz/RiderProjects/ShopVerse/Backend/ShopVerse.Business/ShopVerse.Business.csproj": {
-              "projectPath": "/Users/mehmetdalmaz/RiderProjects/ShopVerse/Backend/ShopVerse.Business/ShopVerse.Business.csproj"
+            "/Users/mehmetdalmaz/Desktop/ShopVerse/Backend/ShopVerse.Business/ShopVerse.Business.csproj": {
+              "projectPath": "/Users/mehmetdalmaz/Desktop/ShopVerse/Backend/ShopVerse.Business/ShopVerse.Business.csproj"
             },
-            "/Users/mehmetdalmaz/RiderProjects/ShopVerse/Backend/ShopVerse.DataAccess/ShopVerse.DataAccess.csproj": {
-              "projectPath": "/Users/mehmetdalmaz/RiderProjects/ShopVerse/Backend/ShopVerse.DataAccess/ShopVerse.DataAccess.csproj"
+            "/Users/mehmetdalmaz/Desktop/ShopVerse/Backend/ShopVerse.DataAccess/ShopVerse.DataAccess.csproj": {
+              "projectPath": "/Users/mehmetdalmaz/Desktop/ShopVerse/Backend/ShopVerse.DataAccess/ShopVerse.DataAccess.csproj"
             },
-            "/Users/mehmetdalmaz/RiderProjects/ShopVerse/Backend/ShopVerse.Dto/ShopVerse.Dto.csproj": {
-              "projectPath": "/Users/mehmetdalmaz/RiderProjects/ShopVerse/Backend/ShopVerse.Dto/ShopVerse.Dto.csproj"
+            "/Users/mehmetdalmaz/Desktop/ShopVerse/Backend/ShopVerse.Dto/ShopVerse.Dto.csproj": {
+              "projectPath": "/Users/mehmetdalmaz/Desktop/ShopVerse/Backend/ShopVerse.Dto/ShopVerse.Dto.csproj"
             },
-            "/Users/mehmetdalmaz/RiderProjects/ShopVerse/Backend/ShopVerse.Entity/ShopVerse.Entity.csproj": {
-              "projectPath": "/Users/mehmetdalmaz/RiderProjects/ShopVerse/Backend/ShopVerse.Entity/ShopVerse.Entity.csproj"
+            "/Users/mehmetdalmaz/Desktop/ShopVerse/Backend/ShopVerse.Entity/ShopVerse.Entity.csproj": {
+              "projectPath": "/Users/mehmetdalmaz/Desktop/ShopVerse/Backend/ShopVerse.Entity/ShopVerse.Entity.csproj"
             }
           }
         }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "o8dTBo0VVMs=",
+  "dgSpecHash": "5RMFf664O54=",
   "success": true,
-  "projectFilePath": "/Users/mehmetdalmaz/RiderProjects/ShopVerse/Backend/ShopVerse.Dto/ShopVerse.Dto.csproj",
+  "projectFilePath": "/Users/mehmetdalmaz/Desktop/ShopVerse/Backend/ShopVerse.Dto/ShopVerse.Dto.csproj",
   "expectedPackageFiles": [
     "/Users/mehmetdalmaz/.nuget/packages/microsoft.entityframeworkcore/9.0.4/microsoft.entityframeworkcore.9.0.4.nupkg.sha512",
     "/Users/mehmetdalmaz/.nuget/packages/microsoft.entityframeworkcore.abstractions/9.0.4/microsoft.entityframeworkcore.abstractions.9.0.4.nupkg.sha512",

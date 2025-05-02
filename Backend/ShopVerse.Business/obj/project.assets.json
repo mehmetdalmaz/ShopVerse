@@ -2964,11 +2964,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/mehmetdalmaz/RiderProjects/ShopVerse/Backend/ShopVerse.Business/ShopVerse.Business.csproj",
+      "projectUniqueName": "/Users/mehmetdalmaz/Desktop/ShopVerse/Backend/ShopVerse.Business/ShopVerse.Business.csproj",
       "projectName": "ShopVerse.Business",
-      "projectPath": "/Users/mehmetdalmaz/RiderProjects/ShopVerse/Backend/ShopVerse.Business/ShopVerse.Business.csproj",
+      "projectPath": "/Users/mehmetdalmaz/Desktop/ShopVerse/Backend/ShopVerse.Business/ShopVerse.Business.csproj",
       "packagesPath": "/Users/mehmetdalmaz/.nuget/packages/",
-      "outputPath": "/Users/mehmetdalmaz/RiderProjects/ShopVerse/Backend/ShopVerse.Business/obj/",
+      "outputPath": "/Users/mehmetdalmaz/Desktop/ShopVerse/Backend/ShopVerse.Business/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/mehmetdalmaz/.nuget/NuGet/NuGet.Config"
@@ -2983,8 +2983,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "/Users/mehmetdalmaz/RiderProjects/ShopVerse/Backend/ShopVerse.DataAccess/ShopVerse.DataAccess.csproj": {
-              "projectPath": "/Users/mehmetdalmaz/RiderProjects/ShopVerse/Backend/ShopVerse.DataAccess/ShopVerse.DataAccess.csproj"
+            "/Users/mehmetdalmaz/Desktop/ShopVerse/Backend/ShopVerse.DataAccess/ShopVerse.DataAccess.csproj": {
+              "projectPath": "/Users/mehmetdalmaz/Desktop/ShopVerse/Backend/ShopVerse.DataAccess/ShopVerse.DataAccess.csproj"
             }
           }
         }

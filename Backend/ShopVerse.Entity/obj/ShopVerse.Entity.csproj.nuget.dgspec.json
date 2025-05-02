@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/mehmetdalmaz/RiderProjects/ShopVerse/Backend/ShopVerse.Entity/ShopVerse.Entity.csproj": {}
+    "/Users/mehmetdalmaz/Desktop/ShopVerse/Backend/ShopVerse.Entity/ShopVerse.Entity.csproj": {}
   },
   "projects": {
-    "/Users/mehmetdalmaz/RiderProjects/ShopVerse/Backend/ShopVerse.Entity/ShopVerse.Entity.csproj": {
+    "/Users/mehmetdalmaz/Desktop/ShopVerse/Backend/ShopVerse.Entity/ShopVerse.Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/mehmetdalmaz/RiderProjects/ShopVerse/Backend/ShopVerse.Entity/ShopVerse.Entity.csproj",
+        "projectUniqueName": "/Users/mehmetdalmaz/Desktop/ShopVerse/Backend/ShopVerse.Entity/ShopVerse.Entity.csproj",
         "projectName": "ShopVerse.Entity",
-        "projectPath": "/Users/mehmetdalmaz/RiderProjects/ShopVerse/Backend/ShopVerse.Entity/ShopVerse.Entity.csproj",
+        "projectPath": "/Users/mehmetdalmaz/Desktop/ShopVerse/Backend/ShopVerse.Entity/ShopVerse.Entity.csproj",
         "packagesPath": "/Users/mehmetdalmaz/.nuget/packages/",
-        "outputPath": "/Users/mehmetdalmaz/RiderProjects/ShopVerse/Backend/ShopVerse.Entity/obj/",
+        "outputPath": "/Users/mehmetdalmaz/Desktop/ShopVerse/Backend/ShopVerse.Entity/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/mehmetdalmaz/.nuget/NuGet/NuGet.Config"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "okw2Y0SOOiM=",
+  "dgSpecHash": "HDXlZMlJVBo=",
   "success": true,
-  "projectFilePath": "/Users/mehmetdalmaz/RiderProjects/ShopVerse/Backend/ShopVerse.Api/ShopVerse.Api.csproj",
+  "projectFilePath": "/Users/mehmetdalmaz/Desktop/ShopVerse/Backend/ShopVerse.Api/ShopVerse.Api.csproj",
   "expectedPackageFiles": [
     "/Users/mehmetdalmaz/.nuget/packages/azure.core/1.38.0/azure.core.1.38.0.nupkg.sha512",
     "/Users/mehmetdalmaz/.nuget/packages/azure.identity/1.11.4/azure.identity.1.11.4.nupkg.sha512",
