@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ShopVerse.DataAccess.Abstract;
+using ShopVerse.Entity.Concrete;
 
 namespace ShopVerse.Business.Services
 {
