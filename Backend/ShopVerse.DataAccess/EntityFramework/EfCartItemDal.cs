@@ -9,7 +9,7 @@ using ShopVerse.Entity.Concrete;
 
 namespace ShopVerse.DataAccess.EntityFramework
 {
-    public class EfCartItemDal : GenericRepository<CartItem>, ICartItem
+    public class EfCartItemDal : GenericRepository<CartItem>, ICartItemDal
     {
         public EfCartItemDal(ShopVerseContext context) : base(context)
         {

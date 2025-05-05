@@ -6,7 +6,7 @@ using ShopVerse.Entity.Concrete;
 
 namespace ShopVerse.DataAccess.Abstract
 {
-    public interface ICartItem: IGenericDal<CartItem>
+    public interface IProductImageService: IGenericService<ProductImage>
     {
         
     }
