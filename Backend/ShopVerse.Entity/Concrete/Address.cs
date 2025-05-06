@@ -9,6 +9,6 @@ public class Address
     public string? District { get; set; }
     public string? PostalCode { get; set; }
 
-    public string? ApplicationUserId { get; set; }
+    public Guid? UserId { get; set; }
     public AppUser? AppUser { get; set; }
 }

@@ -23,8 +23,16 @@ namespace ShopVerse.Api.Controller
         private readonly RoleManager<AppRole> _roleManager;
         private readonly IConfiguration _config;
 
+        public AuthController(UserManager<AppUser> userManager, RoleManager<AppRole> roleManager, IConfiguration config)
+        {
+            _userManager = userManager;
+            _roleManager = roleManager;
+            _config = config;
 
+        }
         [HttpGet("users")]
+        [Authorize(Roles = "Admin")]
+
         public IActionResult GetUsers()
         {
             var users = _userManager.Users.Select(u => new
@@ -38,7 +46,9 @@ namespace ShopVerse.Api.Controller
         }
 
         [HttpGet("users/{id}")]
-        public async Task<IActionResult> GetUserById(int id)
+        [Authorize(Roles = "Admin")]
+
+        public async Task<IActionResult> GetUserById(Guid id)
         {
             var user = await _userManager.FindByIdAsync(id.ToString());
             if (user == null) return NotFound();
@@ -51,6 +61,7 @@ namespace ShopVerse.Api.Controller
             });
         }
         [HttpGet("me")]
+        [Authorize]
         public async Task<IActionResult> GetMyProfile()
         {
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
@@ -61,12 +72,12 @@ namespace ShopVerse.Api.Controller
             {
                 user.Id,
                 user.UserName,
-                user.Email
+                user.Email,
             });
         }
         [HttpDelete("users/{id}")]
         [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> DeleteUser(int id)
+        public async Task<IActionResult> DeleteUser(Guid id)
         {
             var user = await _userManager.FindByIdAsync(id.ToString());
             if (user == null) return NotFound("Kullanıcı bulunamadı");
@@ -78,14 +89,6 @@ namespace ShopVerse.Api.Controller
         }
 
 
-
-        public AuthController(UserManager<AppUser> userManager, RoleManager<AppRole> roleManager, IConfiguration config)
-        {
-            _userManager = userManager;
-            _roleManager = roleManager;
-            _config = config;
-
-        }
 
         [HttpPost("register")]
         public async Task<IActionResult> Register(RegisterDto dto)

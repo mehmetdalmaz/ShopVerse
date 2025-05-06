@@ -9,7 +9,6 @@ namespace ShopVerse.Entity.Concrete
     {
         public Guid Id { get; set; }
 
-        // Kullanıcıya aitse
         public Guid? UserId { get; set; }
         public AppUser? User { get; set; }
 
