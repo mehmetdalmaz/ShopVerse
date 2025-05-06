@@ -10,6 +10,6 @@ namespace ShopVerse.Dto.CategoryDto
     {
         public Guid Id { get; set; }
         public string Name { get; set; }
-        public List<ResultProductDto> ProductDtos { get; set; }
+        public List<ResultProductDto> Products { get; set; }
     }
 }

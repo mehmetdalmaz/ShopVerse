@@ -5,7 +5,11 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using ShopVerse.Business.Services;
+using ShopVerse.DataAccess.Abstract;
 using ShopVerse.DataAccess.Context;
+using ShopVerse.DataAccess.EntityFramework;
+using ShopVerse.DataAccess.Repository;
 using ShopVerse.Entity.Concrete;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,7 +18,34 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddDbContext<ShopVerseContext>();
+//Category
+builder.Services.AddScoped<ICategoryService, CategoryManager>();
+builder.Services.AddScoped<ICategoryDal, EfCategoryDal>();
+//Product
+builder.Services.AddScoped<IProductService, ProductManager>();
+builder.Services.AddScoped<IProductDal, EfProductDal>();
+
+//Order
+builder.Services.AddScoped<IOrderService, OrderManager>();
+builder.Services.AddScoped<IOrderDal, EfOrderDal>();
+
+//Address
+builder.Services.AddScoped<IAddressService, AddressManager>();
+builder.Services.AddScoped<IAddressDal, EfAddressDal>();
+//Cart
+builder.Services.AddScoped<ICartService, CartManager>();
+builder.Services.AddScoped<ICartDal, EfCartDal>();
+
+//ProductImage
+builder.Services.AddScoped<IProductImageService, ProductImageManager>();
+builder.Services.AddScoped<IProductImageDal, EfProductImageDal>();
+
+//ProductReview
+builder.Services.AddScoped<IProductReviewService, ProductReviewManager>(); 
+builder.Services.AddScoped<IProductReviewDal, EfProductReviewDal>();
+
 builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
+
 
 builder.Services.AddIdentity<AppUser, AppRole>()
     .AddEntityFrameworkStores<ShopVerseContext>()
