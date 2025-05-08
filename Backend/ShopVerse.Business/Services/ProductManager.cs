@@ -14,7 +14,22 @@ namespace ShopVerse.Business.Services
         {
             _ProductDal = ProductDal;
         }
-      
+
+        public async Task<List<Product>> GetByCategoryId(Guid categoryId)
+        {
+            return await _ProductDal.GetByCategoryId(categoryId);
+        }
+
+        public async Task<Product?> GetProductWithDetailsAsync(Guid productId)
+        {
+            return await _ProductDal.GetProductWithDetailsAsync(productId);
+        }
+
+        public async Task<List<Product>> Search(string searchString)
+        {
+            return await _ProductDal.Search(searchString);
+        }
+
         public async Task TAddAsync(Product entity)
         {
             await _ProductDal.AddAsync(entity);
@@ -30,12 +45,14 @@ namespace ShopVerse.Business.Services
             return await _ProductDal.GetAllAsync();
         }
 
+      
+
         public async Task<Product> TGetByIdAsync(Guid id)
         {
             return await _ProductDal.GetByIdAsync(id);
         }
 
-        public async Task TUpdateAsync(Product entity)
+              public async Task TUpdateAsync(Product entity)
         {
             await _ProductDal.UpdateAsync(entity);
         }

@@ -6,8 +6,10 @@ using ShopVerse.Entity.Concrete;
 
 namespace ShopVerse.DataAccess.Abstract
 {
-    public interface ICartDal: IGenericDal<Cart>
+    public interface ICartDal : IGenericDal<Cart>
     {
-        
+        Task<Cart?> GetCartByUserIdAsync(Guid userId);
+
+
     }
 }

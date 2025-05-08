@@ -6,8 +6,10 @@ using ShopVerse.Entity.Concrete;
 
 namespace ShopVerse.DataAccess.Abstract
 {
-    public interface IProductDal: IGenericDal<Product>
+    public interface IProductDal : IGenericDal<Product>
     {
-        
+        Task<List<Product>> GetByCategoryId(Guid categoryId);
+        Task<List<Product>> Search(string searchString);
+        Task<Product?> GetProductWithDetailsAsync(Guid productId);
     }
 }

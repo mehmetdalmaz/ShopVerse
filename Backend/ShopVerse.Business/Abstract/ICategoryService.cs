@@ -8,6 +8,6 @@ namespace ShopVerse.DataAccess.Abstract
 {
     public interface ICategoryService: IGenericService<Category>
     {
-        
+        Task<List<Category>> GetAllCategoriesWithProductsAsync();
     }
 }

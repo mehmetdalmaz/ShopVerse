@@ -14,7 +14,12 @@ namespace ShopVerse.Business.Services
         {
             _CategoryDal = CategoryDal;
         }
-      
+
+        public async Task<List<Category>> GetAllCategoriesWithProductsAsync()
+        {
+            return await _CategoryDal.GetAllCategoriesWithProductsAsync();
+        }
+
         public async Task TAddAsync(Category entity)
         {
             await _CategoryDal.AddAsync(entity);

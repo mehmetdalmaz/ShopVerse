@@ -24,16 +24,12 @@ namespace ShopVerse.Api.Controller
             _mapper = mapper;
         }
         [HttpGet]
-        public async Task<ActionResult<ResultCategoryDto>> GetCategoryAsync()
+        public async Task<List<ResultCategoryDto>> GetAllWithProductsAsync()
         {
-            var category = await _categoryService.TGetAllAsync();
-            var result = _mapper.Map<List<ResultCategoryDto>>(category);
-            if (result == null)
-            {
-                return NotFound("Kategori bulunamadı");
-            }
-            return Ok(result);
+            var categories = await _categoryService.GetAllCategoriesWithProductsAsync();
+            return _mapper.Map<List<ResultCategoryDto>>(categories);
         }
+
 
         [HttpGet("{id}")]
         public async Task<ActionResult<ResultCategoryDto>> GetCategoryByIdAsync(Guid id)
@@ -51,9 +47,9 @@ namespace ShopVerse.Api.Controller
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> CreateCategoryAsync(CreateCategoryDto createCategoryDto)
         {
-           var values = _mapper.Map<Category>(createCategoryDto);
+            var values = _mapper.Map<Category>(createCategoryDto);
             await _categoryService.TAddAsync(values);
-            return Ok ("Kategori başarıyla eklendi");
+            return Ok("Kategori başarıyla eklendi");
         }
         [HttpPut]
         [Authorize(Roles = "Admin")]

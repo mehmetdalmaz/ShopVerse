@@ -8,6 +8,6 @@ namespace ShopVerse.DataAccess.Abstract
 {
     public interface ICategoryDal: IGenericDal<Category>
     {
-        
+        Task<List<Category>> GetAllCategoriesWithProductsAsync();
     }
 }
