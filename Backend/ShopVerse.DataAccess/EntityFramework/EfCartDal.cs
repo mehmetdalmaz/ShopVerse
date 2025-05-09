@@ -17,10 +17,9 @@ namespace ShopVerse.DataAccess.Repository
             _context = context;
         }
 
-        public Task<Cart?> GetCartByUserIdAsync(Guid userId)
+        public Task<Cart?> GetCartWithItemsAsync(Guid userId)
         {
             return _context.Carts
-                .Where(c => c.UserId == userId)
                 .Include(c => c.CartItems)
                 .ThenInclude(ci => ci.Product)
                 .FirstOrDefaultAsync(c => c.UserId == userId);

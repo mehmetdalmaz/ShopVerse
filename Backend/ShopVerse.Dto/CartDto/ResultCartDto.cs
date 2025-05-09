@@ -10,6 +10,7 @@ namespace ShopVerse.Dto.CartDto
     {
         public Guid Id { get; set; }
         public Guid? UserId { get; set; }
+        public decimal TotalPrice { get; set; }
 
         public List<ResultCartItemDto> CartItems { get; set; } = new();
 

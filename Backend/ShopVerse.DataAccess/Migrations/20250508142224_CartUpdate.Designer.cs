@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ShopVerse.DataAccess.Context;
 
@@ -11,9 +12,11 @@ using ShopVerse.DataAccess.Context;
 namespace ShopVerse.DataAccess.Migrations
 {
     [DbContext(typeof(ShopVerseContext))]
-    partial class ShopVerseContextModelSnapshot : ModelSnapshot
+    [Migration("20250508142224_CartUpdate")]
+    partial class CartUpdate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -261,9 +264,6 @@ namespace ShopVerse.DataAccess.Migrations
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
-
-                    b.Property<decimal>("TotalPrice")
-                        .HasColumnType("decimal(18,2)");
 
                     b.Property<Guid?>("UserId")
                         .HasColumnType("uniqueidentifier");
