@@ -1,8 +1,10 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ShopVerse.DataAccess.Abstract;
 using ShopVerse.Dto.AddressDto;
@@ -12,6 +14,7 @@ namespace ShopVerse.Api.Controller
 {
     [ApiController]
     [Route("api/[controller]")]
+    [Authorize]
     public class AddressController : ControllerBase
     {
         private readonly IAddressService _addressService;
@@ -19,51 +22,73 @@ namespace ShopVerse.Api.Controller
         public AddressController(IAddressService addressService, IMapper mapper)
         {
             _mapper = mapper;
-        
+
             _addressService = addressService;
         }
-
-        [HttpGet]
-        public async Task<List<ResultAddressDto>> GetAllAddressesAsync()
+        private Guid GetUserId()
         {
-            var addresses = await _addressService.TGetAllAsync();
-            return _mapper.Map<List<ResultAddressDto>>(addresses);
-        }
-        [HttpGet("{id}")]
-        public async Task<ActionResult<ResultAddressDto>> GetAddressByIdAsync(Guid id)
-        {
-            var address = await _addressService.TGetByIdAsync(id);
-            var result = _mapper.Map<ResultAddressDto>(address);
-            if (result == null)
+            var userIdClaim = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier);
+            if (userIdClaim == null)
             {
-                return NotFound("Adres bulunamadı");
+                throw new UnauthorizedAccessException("Kullanıcı kimliği bulunamadı.");
             }
-            return Ok(result);
+            return Guid.Parse(userIdClaim.Value);
         }
-        [HttpPost]
-        public async Task<IActionResult> CreateAddressAsync(CreateAddressDto createAddressDto)
+
+        [HttpGet("getall")]
+        public async Task<ActionResult<List<ResultAddressDto>>> GetAll()
         {
+            var userId = GetUserId();
+            var addresses = await _addressService.GetAddressesByUserIdAsync(userId);
+            var resultAddressDto = _mapper.Map<List<ResultAddressDto>>(addresses);
+            return Ok(resultAddressDto);
+        }
+        [HttpPost("add")]
+        public async Task<IActionResult> AddAddress(CreateAddressDto createAddressDto)
+        {
+            var userId = GetUserId();
             var address = _mapper.Map<Address>(createAddressDto);
+            address.UserId = userId;
             await _addressService.TAddAsync(address);
-            return Ok("Adres başarıyla eklendi");
+            return Ok("Adres Başarılı bir şekilde Kaydedildi.");
         }
-        [HttpPut]
-        public async Task<IActionResult> UpdateAddressAsync(UpdateAddressDto updateAddressDto)
+        [HttpPut("update")]
+        public async Task<IActionResult> UpdateAddress(UpdateAddressDto updateAddressDto)
         {
-            var address = _mapper.Map<Address>(updateAddressDto);
+            var userId = GetUserId();
+            var address = await _addressService.TGetByIdAsync(updateAddressDto.Id);
+            if (address == null)
+            {
+                return NotFound("Adres bulunamadı.");
+            }
+            if (address.UserId != userId)
+            {
+                return Forbid("Bu adrese erişim izniniz yok.");
+            }
+            address.City = updateAddressDto.City;
+            address.District = updateAddressDto.District;
+            address.City = updateAddressDto.City;
+            address.Street = updateAddressDto.Street;
+            address.PostalCode = updateAddressDto.PostalCode;
+            address.Title = updateAddressDto.Title;
             await _addressService.TUpdateAsync(address);
-            return Ok("Adres başarıyla güncellendi");
+            return Ok("Adres Başarılı bir şekilde Güncellendi.");
         }
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteAddressAsync(Guid id)
+        [HttpDelete("delete/{id}")]
+        public async Task<IActionResult> DeleteAddress(Guid id)
         {
+            var userId = GetUserId();
             var address = await _addressService.TGetByIdAsync(id);
             if (address == null)
             {
-                return NotFound("Adres bulunamadı");
+                return NotFound("Adres bulunamadı.");
+            }
+            if (address.UserId != userId)
+            {
+                return Forbid("Bu adrese erişim izniniz yok.");
             }
             await _addressService.TDeleteAsync(id);
-            return Ok("Adres başarıyla silindi");
+            return Ok("Adres Başarılı bir şekilde Silindi.");
         }
     }
 }

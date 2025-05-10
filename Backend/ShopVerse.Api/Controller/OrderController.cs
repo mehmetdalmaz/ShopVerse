@@ -44,14 +44,6 @@ namespace ShopVerse.Api.Controller
 
             return Ok("Order created successfully.");
         }
-
-        [HttpGet("user/{userId}")]
-        public async Task<ActionResult<List<ResultOrderDto>>> GetOrdersByUserId(Guid userId)
-        {
-            var orders = await _orderService.TGetByUserIdAsync(userId);
-            var resultOrderDto = _mapper.Map<List<ResultOrderDto>>(orders);
-            return Ok(resultOrderDto);
-        }
         [HttpGet]
         public async Task<ActionResult<List<ResultOrderDto>>> GetOrders()
         {

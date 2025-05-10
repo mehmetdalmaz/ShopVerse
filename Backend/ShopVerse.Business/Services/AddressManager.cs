@@ -14,7 +14,12 @@ namespace ShopVerse.Business.Services
         {
             _addressDal = addressDal;
         }
-      
+
+        public Task<List<Address>> GetAddressesByUserIdAsync(Guid userId)
+        {
+            return _addressDal.GetAddressesByUserIdAsync(userId);
+        }
+
         public async Task TAddAsync(Address entity)
         {
             await _addressDal.AddAsync(entity);

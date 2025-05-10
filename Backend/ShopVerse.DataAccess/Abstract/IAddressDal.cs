@@ -6,8 +6,9 @@ using ShopVerse.Entity.Concrete;
 
 namespace ShopVerse.DataAccess.Abstract
 {
-    public interface IAddressDal: IGenericDal<Address>
+    public interface IAddressDal : IGenericDal<Address>
     {
-        
+        Task<List<Address>> GetAddressesByUserIdAsync(Guid userId);
+
     }
 }

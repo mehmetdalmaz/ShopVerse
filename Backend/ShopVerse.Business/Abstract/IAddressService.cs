@@ -8,6 +8,7 @@ namespace ShopVerse.DataAccess.Abstract
 {
     public interface IAddressService: IGenericService<Address>
     {
-        
+        Task<List<Address>> GetAddressesByUserIdAsync(Guid userId);
+
     }
 }

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ShopVerse.DataAccess")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+583284fb021952ee7096806c7aab04e2d42bf208")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+33f9af5fb8be984eae4bc6996e9773bbff7628a2")]
 [assembly: System.Reflection.AssemblyProductAttribute("ShopVerse.DataAccess")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ShopVerse.DataAccess")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
