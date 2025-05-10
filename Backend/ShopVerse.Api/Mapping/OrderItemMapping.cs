@@ -13,7 +13,10 @@ namespace ShopVerse.Api.Mapping
         public OrderItemMapping()
         {
             
-            CreateMap<OrderItem, ResultOrderItemDto>().ReverseMap();
+            CreateMap<OrderItem, ResultOrderItemDto>()
+                .ForMember(dest => dest.ProductName, opt => opt.MapFrom(src => src.Product!.Name)).ReverseMap();
+                
+
               
         }
     }

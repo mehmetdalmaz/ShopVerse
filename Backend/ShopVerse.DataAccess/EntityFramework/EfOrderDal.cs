@@ -21,8 +21,12 @@ namespace ShopVerse.DataAccess.EntityFramework
         public async Task<List<Order>> TGetByUserIdAsync(Guid userId)
         {
             return await _context.Orders
-                           .Where(o => o.AppUserId == userId)
-                           .ToListAsync();
+        .Include(o => o.Address)                       // Adres bilgisi
+        .Include(o => o.Items)                         // OrderItem ilişkisi
+            .ThenInclude(oi => oi.Product)             // OrderItem içindeki Product ilişkisi
+        .Where(o => o.AppUserId == userId)
+        .ToListAsync();
+
 
         }
     }

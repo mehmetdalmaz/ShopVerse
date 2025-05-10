@@ -10,7 +10,7 @@ namespace ShopVerse.DataAccess.Abstract
     public interface IOrderService: IGenericService<Order>
     {
         Task<Guid> CreateOrderAsync( CreateOrderDto createOrderDto, Guid userId);
-        Task<List<Order>> TGetByUserIdAsync(Guid userId);
+        Task<List<ResultOrderDto>> TGetByUserIdAsync(Guid userId);
 
     }
 }

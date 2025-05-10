@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ShopVerse.Dto.AddressDto;
 using ShopVerse.Dto.OrderItemDto;
 
 namespace ShopVerse.Dto.OrderDto
@@ -14,6 +15,6 @@ namespace ShopVerse.Dto.OrderDto
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
         public ICollection<ResultOrderItemDto> Items { get; set; }
-        public Guid AddressId { get; set; }
+        public ResultAddressDto AddressDto { get; set; }
     }
 }

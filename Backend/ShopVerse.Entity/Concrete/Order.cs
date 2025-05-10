@@ -8,7 +8,7 @@ public class Order
 
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
-    public ICollection<OrderItem>? Items { get; set; }
+    public ICollection<OrderItem> Items { get; set; } =new List<OrderItem>();
     public Guid AddressId { get; set; }
     public Address? Address { get; set; }
 
