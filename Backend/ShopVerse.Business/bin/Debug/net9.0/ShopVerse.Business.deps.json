@@ -649,10 +649,22 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "9.0.4",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.4",
+          "ShopVerse.Dto": "1.0.0",
           "ShopVerse.Entity": "1.0.0"
         },
         "runtime": {
           "ShopVerse.DataAccess.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "ShopVerse.Dto/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "9.0.4"
+        },
+        "runtime": {
+          "ShopVerse.Dto.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -1099,6 +1111,11 @@
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
     },
     "ShopVerse.DataAccess/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ShopVerse.Dto/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -727,6 +727,7 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "9.0.4",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.4",
+          "ShopVerse.Dto": "1.0.0",
           "ShopVerse.Entity": "1.0.0"
         },
         "runtime": {

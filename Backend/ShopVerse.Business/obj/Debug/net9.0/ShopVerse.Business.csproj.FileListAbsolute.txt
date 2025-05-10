@@ -33,3 +33,5 @@
 /Users/mehmetdalmaz/Desktop/ShopVerse/Backend/ShopVerse.Business/bin/Debug/net9.0/ShopVerse.Entity.pdb
 /Users/mehmetdalmaz/Desktop/ShopVerse/Backend/ShopVerse.Business/obj/Debug/net9.0/ShopVers.55B40ECF.Up2Date
 /Users/mehmetdalmaz/Desktop/ShopVerse/Backend/ShopVerse.Business/obj/Debug/net9.0/ref/ShopVerse.Business.dll
+/Users/mehmetdalmaz/Desktop/ShopVerse/Backend/ShopVerse.Business/bin/Debug/net9.0/ShopVerse.Dto.dll
+/Users/mehmetdalmaz/Desktop/ShopVerse/Backend/ShopVerse.Business/bin/Debug/net9.0/ShopVerse.Dto.pdb

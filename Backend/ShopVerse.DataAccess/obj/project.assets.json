@@ -1681,6 +1681,19 @@
           }
         }
       },
+      "ShopVerse.Dto/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "9.0.4"
+        },
+        "compile": {
+          "bin/placeholder/ShopVerse.Dto.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ShopVerse.Dto.dll": {}
+        }
+      },
       "ShopVerse.Entity/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -4889,6 +4902,11 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "ShopVerse.Dto/1.0.0": {
+      "type": "project",
+      "path": "../ShopVerse.Dto/ShopVerse.Dto.csproj",
+      "msbuildProject": "../ShopVerse.Dto/ShopVerse.Dto.csproj"
+    },
     "ShopVerse.Entity/1.0.0": {
       "type": "project",
       "path": "../ShopVerse.Entity/ShopVerse.Entity.csproj",
@@ -4901,6 +4919,7 @@
       "Microsoft.EntityFrameworkCore.Design >= 9.0.4",
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.4",
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.4",
+      "ShopVerse.Dto >= 1.0.0",
       "ShopVerse.Entity >= 1.0.0"
     ]
   },
@@ -4929,6 +4948,9 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
+            "/Users/mehmetdalmaz/Desktop/ShopVerse/Backend/ShopVerse.Dto/ShopVerse.Dto.csproj": {
+              "projectPath": "/Users/mehmetdalmaz/Desktop/ShopVerse/Backend/ShopVerse.Dto/ShopVerse.Dto.csproj"
+            },
             "/Users/mehmetdalmaz/Desktop/ShopVerse/Backend/ShopVerse.Entity/ShopVerse.Entity.csproj": {
               "projectPath": "/Users/mehmetdalmaz/Desktop/ShopVerse/Backend/ShopVerse.Entity/ShopVerse.Entity.csproj"
             }

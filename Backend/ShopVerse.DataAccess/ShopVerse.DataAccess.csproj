@@ -8,6 +8,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\ShopVerse.Entity\ShopVerse.Entity.csproj" />
+      <ProjectReference Include="..\ShopVerse.Dto\ShopVerse.Dto.csproj" />
     </ItemGroup>
 
     <ItemGroup>

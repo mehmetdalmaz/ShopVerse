@@ -11,6 +11,8 @@ namespace ShopVerse.DataAccess.Abstract
         Task<Cart?> GetOrCreateCartAsync(Guid userId);
         Task AddItemAsync(Cart cart, Product product, int quantity);
         Task RemoveItemAsync(Cart cart, Guid productId, int quantity);
+        Task ClearCartAsync(Guid cartId);
+
 
     }
 }

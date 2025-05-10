@@ -33,3 +33,5 @@
 /Users/mehmetdalmaz/Desktop/ShopVerse/Backend/ShopVerse.DataAccess/obj/Debug/net9.0/ShopVerse.DataAccess.pdb
 /Users/mehmetdalmaz/Desktop/ShopVerse/Backend/ShopVerse.DataAccess/obj/Debug/net9.0/ShopVerse.DataAccess.genruntimeconfig.cache
 /Users/mehmetdalmaz/Desktop/ShopVerse/Backend/ShopVerse.DataAccess/obj/Debug/net9.0/ref/ShopVerse.DataAccess.dll
+/Users/mehmetdalmaz/Desktop/ShopVerse/Backend/ShopVerse.DataAccess/bin/Debug/net9.0/ShopVerse.Dto.dll
+/Users/mehmetdalmaz/Desktop/ShopVerse/Backend/ShopVerse.DataAccess/bin/Debug/net9.0/ShopVerse.Dto.pdb

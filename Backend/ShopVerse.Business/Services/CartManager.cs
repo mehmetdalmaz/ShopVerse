@@ -38,8 +38,18 @@ namespace ShopVerse.Business.Services
                 item.Quantity += quantity;
             }
 
-            product.Stock -= quantity;
             await _CartDal.UpdateAsync(cart);
+        }
+
+        public async Task ClearCartAsync(Guid cartId)
+        {
+            var cart = await _CartDal.GetByIdAsync(cartId);
+            if (cart != null)
+            {
+                cart.CartItems.Clear(); // Navigasyon koleksiyonunu temizle
+                await _CartDal.UpdateAsync(cart);
+            }
+
         }
 
         public async Task<Cart?> GetOrCreateCartAsync(Guid userId)
@@ -81,7 +91,6 @@ namespace ShopVerse.Business.Services
             else
             {
                 item.Quantity -= quantity;
-                item.Product.Stock += quantity;
             }
 
             await _CartDal.UpdateAsync(cart);
