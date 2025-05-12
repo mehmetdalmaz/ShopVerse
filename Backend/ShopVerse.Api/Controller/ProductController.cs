@@ -79,7 +79,7 @@ namespace ShopVerse.Api.Controller
         }
         [HttpPost]
         [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> CreateProductAsync(CreateProductDto createProductDto)
+        public async Task<IActionResult> CreateProductAsync([FromBody] CreateProductDto createProductDto)
         {
             var product = _mapper.Map<Product>(createProductDto);
             await _productService.TAddAsync(product);
@@ -87,7 +87,7 @@ namespace ShopVerse.Api.Controller
         }
         [HttpPut]
         [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> UpdateProductAsync(UpdateProductDto updateProductDto)
+        public async Task<IActionResult> UpdateProductAsync([FromBody] UpdateProductDto updateProductDto)
         {
             var product = _mapper.Map<Product>(updateProductDto);
             await _productService.TUpdateAsync(product);

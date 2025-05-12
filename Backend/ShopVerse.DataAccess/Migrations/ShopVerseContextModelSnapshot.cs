@@ -378,6 +378,9 @@ namespace ShopVerse.DataAccess.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("ImageUrl")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
@@ -392,25 +395,6 @@ namespace ShopVerse.DataAccess.Migrations
                     b.HasIndex("CategoryId");
 
                     b.ToTable("Products");
-                });
-
-            modelBuilder.Entity("ShopVerse.Entity.Concrete.ProductImage", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("ImageUrl")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<Guid>("ProductId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ProductId");
-
-                    b.ToTable("ProductImages");
                 });
 
             modelBuilder.Entity("ShopVerse.Entity.Concrete.ProductReview", b =>
@@ -580,17 +564,6 @@ namespace ShopVerse.DataAccess.Migrations
                     b.Navigation("Category");
                 });
 
-            modelBuilder.Entity("ShopVerse.Entity.Concrete.ProductImage", b =>
-                {
-                    b.HasOne("ShopVerse.Entity.Concrete.Product", "Product")
-                        .WithMany("Images")
-                        .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Product");
-                });
-
             modelBuilder.Entity("ShopVerse.Entity.Concrete.ProductReview", b =>
                 {
                     b.HasOne("ShopVerse.Entity.Concrete.AppUser", "AppUser")
@@ -639,8 +612,6 @@ namespace ShopVerse.DataAccess.Migrations
             modelBuilder.Entity("ShopVerse.Entity.Concrete.Product", b =>
                 {
                     b.Navigation("CartItems");
-
-                    b.Navigation("Images");
 
                     b.Navigation("Reviews");
                 });

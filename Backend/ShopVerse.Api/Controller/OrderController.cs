@@ -34,6 +34,14 @@ namespace ShopVerse.Api.Controller
             }
             return Guid.Parse(userIdClaim.Value);
         }
+        [HttpGet ("getall")]
+        [Authorize(Roles = "Admin")]
+        public async Task<ActionResult<List<ResultOrderDto>>> GetAllOrders()
+        {
+            var orders = await _orderService.TGetAllAsync();
+            var resultOrderDto = _mapper.Map<List<ResultOrderDto>>(orders);
+            return Ok(resultOrderDto);
+        }
 
         [HttpPost("create")]
         public async Task<IActionResult> CreateOrder(CreateOrderDto createOrderDto)
@@ -44,7 +52,7 @@ namespace ShopVerse.Api.Controller
 
             return Ok("Order created successfully.");
         }
-        [HttpGet]
+        [HttpGet("myorders")]
         public async Task<ActionResult<List<ResultOrderDto>>> GetOrders()
         {
             var userId = GetUserId();
@@ -52,5 +60,7 @@ namespace ShopVerse.Api.Controller
             var resultOrderDto = _mapper.Map<List<ResultOrderDto>>(orders);
             return Ok(resultOrderDto);
         }
+        
+        
     }
 }

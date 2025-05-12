@@ -106,6 +106,15 @@ builder.Services.AddSwaggerGen(c =>
         }
     });
 });
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowFrontend", policy =>
+    {
+        policy.WithOrigins("http://localhost:5173") // React dev server adresi
+              .AllowAnyHeader()
+              .AllowAnyMethod();
+    });
+});
 
 
 var app = builder.Build();
@@ -121,7 +130,7 @@ if (app.Environment.IsDevelopment())
     });
 
 }
-
+app.UseCors("AllowFrontend");
 app.UseAuthentication();
 app.UseAuthorization();
 

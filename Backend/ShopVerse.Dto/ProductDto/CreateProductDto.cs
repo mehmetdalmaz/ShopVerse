@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using ShopVerse.Dto.CartItemDto;
-using ShopVerse.Dto.ProductImageDto;
-using ShopVerse.Dto.ProductReviewDto;
 
 namespace ShopVerse.Dto.ProductDto
 {

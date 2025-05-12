@@ -80,7 +80,7 @@ namespace ShopVerse.Business.Services
 
         public async Task<List<Order>> TGetAllAsync()
         {
-            return await _OrderDal.GetAllAsync();
+            return await _OrderDal.GetAllOrderAdmin();
         }
 
         public async Task<Order> TGetByIdAsync(Guid id)

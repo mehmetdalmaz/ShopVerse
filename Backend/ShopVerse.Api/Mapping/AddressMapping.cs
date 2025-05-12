@@ -13,7 +13,7 @@ namespace ShopVerse.Api.Mapping
         public AddressMapping()
         {
             CreateMap<Address, CreateAddressDto>().ReverseMap();
-            CreateMap<AppUser, ResultAddressDto>().ReverseMap();
+            CreateMap<Address, ResultAddressDto>().ReverseMap();
             CreateMap<Address, UpdateAddressDto>().ReverseMap();
         }
     }

@@ -10,8 +10,7 @@ public class Product
 
     public Guid CategoryId { get; set; }
     public Category? Category { get; set; }
-
-    public ICollection<ProductImage>? Images { get; set; }
+    public string? ImageUrl { get; set; }
     public ICollection<ProductReview>? Reviews { get; set; }
     public ICollection<CartItem>? CartItems { get; set; }
 

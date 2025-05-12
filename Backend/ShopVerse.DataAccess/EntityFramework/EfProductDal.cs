@@ -29,7 +29,6 @@ namespace ShopVerse.DataAccess.EntityFramework
         public Task<Product?> GetProductWithDetailsAsync(Guid productId)
         {
             return _context.Products
-                .Include(p => p.Images)
                 .Include(p => p.Reviews)
                 .Include(p => p.CartItems)
                 .FirstOrDefaultAsync(p => p.Id == productId);

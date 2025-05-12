@@ -18,12 +18,23 @@ namespace ShopVerse.DataAccess.EntityFramework
             _context = context;
         }
 
+        public async Task<List<Order>> GetAllOrderAdmin()
+        {
+             return await _context.Orders
+        .Include(x => x.Items)
+        .ThenInclude(oi => oi.Product) 
+        .Include(x => x.Address)
+        .ToListAsync();
+}                
+
+        
+
         public async Task<List<Order>> TGetByUserIdAsync(Guid userId)
         {
             return await _context.Orders
         .Include(o => o.Address)                       // Adres bilgisi
         .Include(o => o.Items)                         // OrderItem ilişkisi
-            .ThenInclude(oi => oi.Product)             // OrderItem içindeki Product ilişkisi
+        .ThenInclude(oi => oi.Product)             // OrderItem içindeki Product ilişkisi
         .Where(o => o.AppUserId == userId)
         .ToListAsync();
 

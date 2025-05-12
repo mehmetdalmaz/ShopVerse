@@ -34,6 +34,7 @@ namespace ShopVerse.Api.Controller
             }
             return Guid.Parse(userIdClaim.Value);
         }
+        
 
         [HttpGet("getall")]
         public async Task<ActionResult<List<ResultAddressDto>>> GetAll()
