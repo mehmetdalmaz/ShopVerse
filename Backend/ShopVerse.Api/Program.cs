@@ -110,7 +110,7 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowFrontend", policy =>
     {
-        policy.WithOrigins("http://localhost:5173") // React dev server adresi
+        policy.WithOrigins("http://localhost:5173", "http://another-frontend.com") // Daha fazla domain ekleyebilirsiniz
               .AllowAnyHeader()
               .AllowAnyMethod();
     });

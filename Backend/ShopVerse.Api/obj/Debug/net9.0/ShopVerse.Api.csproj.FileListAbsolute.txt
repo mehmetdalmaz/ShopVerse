@@ -196,3 +196,5 @@
 /Users/mehmetdalmaz/Desktop/ShopVerse/Backend/ShopVerse.Api/obj/Debug/net9.0/ShopVers.26DD5489.Up2Date
 /Users/mehmetdalmaz/Desktop/ShopVerse/Backend/ShopVerse.Api/obj/Debug/net9.0/ShopVerse.Api.genruntimeconfig.cache
 /Users/mehmetdalmaz/Desktop/ShopVerse/Backend/ShopVerse.Api/obj/Debug/net9.0/ref/ShopVerse.Api.dll
+/Users/mehmetdalmaz/Desktop/ShopVerse/Backend/ShopVerse.Api/bin/Debug/net9.0/package-lock.json
+/Users/mehmetdalmaz/Desktop/ShopVerse/Backend/ShopVerse.Api/bin/Debug/net9.0/package.json
